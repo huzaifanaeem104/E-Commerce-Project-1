@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>About Page</title>
+    <style>
+        /* <<<<<<<<<>>>>>>>>>>> */
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+            transition: all 0.3s ease;
+        }
+
+        .icon-img {
+            width: 55%;
+            height: 55%;
+            object-fit: contain;
+        }
+
+        .stat-card {
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            background-color: #db4444;
+            color: #fff;
+            box-shadow: 0 0 25px rgba(219, 68, 68, 0.6);
+            transform: translateY(-6px);
+            cursor: pointer;
+        }
+
+        .stat-card:hover p {
+            color: #fff !important;
+        }
+
+        .stat-card:hover .icon-circle {
+            background-color: black !important;
+            box-shadow: 0 0 20px rgba(41, 39, 39, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container py-5">
+
+        <!-- Breadcrumb -->
+        <div class="mb-4 text-muted small">
+            Home <span class="mx-2">/</span> <span class="text-dark">About</span>
+        </div>
+
+        <!-- Story Row -->
+        <div class="row align-items-center mb-5">
+
+            <!-- Text -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="fw-bold mb-4">Our Story</h2>
+
+                <p class="small text-muted">
+                    Launched in 2015, Exclusive is South Asia’s premier online shopping
+                    marketplace with an active presence in Bangladesh. Supported by wide
+                    range of tailored marketing, data and service solutions, Exclusive has
+                    10,500 sellers and 300 brands and serves 3 million customers across the region.
+                </p>
+
+                <p class="small text-muted">
+                    Exclusive has more than 1 Million products to offer, growing at a very
+                    fast. Exclusive offers a diverse assortment in categories ranging from consumer.
+                </p>
+            </div>
+
+            <!-- Image -->
+            <div class="col-lg-6 text-center">
+                <img src="./Images-About-Page/portrait-two-african-females-holding-shopping-bags-while-reacting-something-their-smartphone 1.png"
+                    class="img-fluid rounded" alt="Our Story">
+            </div>
+
+        </div>
+
+        <!-- Stats -->
+        <div class="row g-4 text-center">
+
+            <div class="col-6 col-lg-3">
+                <div class="border rounded p-4 h-100 text-center stat-card">
+
+                    <!-- Circle Icon -->
+                    <div
+                        class="icon-circle bg-black rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+                        <img src="./Images-About-Page/icon_shop.png" class="img-fluid icon-img">
+                    </div>
+
+                    <h4 class="fw-bold">10.5k</h4>
+                    <p class="small text-muted mb-0">Sellers active our site</p>
+
+                </div>
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+                <div class="bg-danger text-white rounded p-4 h-100">
+                    <img class="bg-light rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                        style="width:60px;height:60px;" src="./Images-About-Page/Icon-Sale.png">
+                    <!-- <div class="bg-white text-danger rounded-circle d-inline-flex align-items-center justify-content-center mb-3"
+                        style="width:60px;height:60px;">
+                        💲
+                    </div> -->
+                    <h4 class="fw-bold">33k</h4>
+                    <p class="small mb-0">Monthly Product Sale</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <div class="border rounded p-4 h-100 text-center stat-card">
+
+                    <!-- Circle Icon -->
+                    <div
+                        class="icon-circle bg-black rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+                        <img src="./Images-About-Page/Icon-Shopping bag.png" class="img-fluid icon-img">
+                    </div>
+
+                    <h4 class="fw-bold">45.5k</h4>
+                    <p class="small text-muted mb-0">Customer active in our site</p>
+
+                </div>
+            </div>
+
+
+            <div class="col-6 col-lg-3">
+                <div class="border rounded p-4 h-100 text-center stat-card">
+
+                    <!-- Circle Icon -->
+                    <div
+                        class="icon-circle bg-black rounded-circle d-inline-flex align-items-center justify-content-center mb-3">
+                        <img src="./Images-About-Page/Group.png" class="img-fluid icon-img">
+                    </div>
+
+                    <h4 class="fw-bold">25k</h4>
+                    <p class="small text-muted mb-0">Annual gross sale in our site</p>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+
+    <section class="container py-5 ">
+
+        <!-- Team Members -->
+        <div class="row justify-content-center text-center mb-5 border">
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm p-2 team-card">
+                    <img src="./Images-About-Page/Frame 874.png" alt="Tom Cruise" class="card-img-top rounded-2">
+                    <div class="card-body">
+                        <h5 class="card-title mt-3">Tom Cruise</h5>
+                        <p class="text-muted mb-2">Founder & Chairman</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <img class="fs-4" src="./Images-About-Page/Icon-Twitter (1).png" alt="">
+                            <img class="fs-4" src="./Images-About-Page/icon-instagram (1).png" alt="">
+                            <img class="fs-4" src="./Images-About-Page/Icon-Linkedin (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4 object-fit-scale border">
+                <div class="card border-0 shadow-sm p-2 team-card">
+                    <img src="./Images-About-Page/Frame 874.png" alt="Tom Cruise" class="card-img-top rounded-2">
+                    <!-- <img src="./Images-About-Page/image 51.png" style="width: 80%; height: 100%;"  alt="Emma Watson" class="card-img-top rounded-2"> -->
+                    <div class="card-body">
+                        <h5 class="card-title mt-3">Emma Watson</h5>
+                        <p class="text-muted mb-2">Managing Director</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <img class="fs-4" src="./Images-About-Page/Icon-Twitter (1).png" alt="">
+                            <img class="fs-4" src="./Images-About-Page/icon-instagram (1).png" alt="">
+                            <img class="fs-4" src="./Images-About-Page/Icon-Linkedin (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card border-0 shadow-sm p-2 team-card">
+                    <img src="./Images-About-Page/Frame 876.png" alt="Will Smith" class="card-img-top rounded-2">
+                    <div class="card-body">
+                        <h5 class="card-title mt-3">Will Smith</h5>
+                        <p class="text-muted mb-2">Product Designer</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <img class="fs-4" src="./Images-About-Page/Icon-Twitter (1).png" alt="">
+                            <img class="fs-4" src="./Images-About-Page/icon-instagram (1).png" alt="">
+                            <img class="fs-4" src="./Images-About-Page/Icon-Linkedin (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <div class="row text-center">
+            <div class="col-md-4 mb-4">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="bg-dark text-white rounded-circle d-flex justify-content-center align-items-center mb-3"
+                        style="width:60px; height:60px;">
+                        <img class="fs-4" src="./Images-About-Page/icon-delivery (1).png">
+                        <!-- <i class="bi bi-truck fs-4"></i> -->
+                    </div>
+                    <h6 class="fw-bold">FREE AND FAST DELIVERY</h6>
+                    <p class="text-muted">Free delivery for all orders over $140</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="bg-dark text-white rounded-circle d-flex justify-content-center align-items-center mb-3"
+                        style="width:60px; height:60px;">
+                        <img class="fs-4" src="./Images-About-Page/Icon-Customer service (1).png">
+                        <!-- <i class="bi bi-headset fs-4"></i> -->
+                    </div>
+                    <h6 class="fw-bold">24/7 CUSTOMER SERVICE</h6>
+                    <p class="text-muted">Friendly 24/7 customer support</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="d-flex flex-column align-items-center">
+                    <div class="bg-dark text-white rounded-circle d-flex justify-content-center align-items-center mb-3"
+                        style="width:60px; height:60px;">
+                        <img src="./Images-About-Page/Icon-secure (1).png">
+                        <!-- <i class="bi bi-shield-check fs-4"></i> -->
+                    </div>
+                    <h6 class="fw-bold">MONEY BACK GUARANTEE</h6>
+                    <p class="text-muted">We return money within 30 days</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+</body>
+
+</html>

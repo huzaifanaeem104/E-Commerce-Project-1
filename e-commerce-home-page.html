@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <title>Exclusive</title>
+
+  <style>
+    .flash-sale-section {
+      overflow: hidden;
+    }
+
+    .slider-wrapper {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .slider-track {
+      display: flex;
+      transition: 0.5s ease;
+    }
+
+    .product-card {
+      min-width: 250px;
+      margin-right: 20px;
+      padding: 15px;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      text-align: center;
+      position: relative;
+      background: #fff;
+    }
+
+    .product-card img {
+      height: 180px;
+      object-fit: contain;
+    }
+
+    .discount {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: red;
+      color: white;
+      padding: 4px 8px;
+      font-size: 12px;
+      border-radius: 5px;
+    }
+
+    .price {
+      color: red;
+      font-weight: bold;
+    }
+
+    .arrow-btn {
+      border: none;
+      background: #f2f2f2;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Top Bar -->
+  <div class="bg-dark text-white text-center py-2 small">
+    Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+    <a href="#" class="text-white fw-bold text-decoration-underline ms-1">ShopNow</a>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom">
+    <div class="container-fluid px-4">
+
+      <a class="navbar-brand fw-bold fs-4" href="#">Exclusive</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav mx-auto gap-lg-4">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact-page.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about-page.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="./sign-up-page.html">Sign Up</a></li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-3">
+          <div class="input-group d-none d-md-flex">
+            <input type="text" class="form-control form-control-sm" placeholder="What are you looking for?">
+            <i class="fa-solid fa-magnifying-glass input-group-text bg-white" role="button"></i>
+          </div>
+          <img class="fs-5" src="./Images Home Page/Wishlist.png" role="button" alt="heart">
+          <img class="fs-5" src="./Images Home Page/Cart1 with buy.png" role="button" alt="">
+        </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Main Section -->
+  <section class="container-fluid px-4 py-4">
+    <div class="row">
+
+      <!-- Sidebar -->
+      <div class="col-lg-3 d-none d-lg-block border-end">
+        <ul class="list-unstyled lh-lg">
+          <li class="d-flex justify-content-between " role="button">Woman’s Fashion <span>›</span></li>
+          <li class="d-flex justify-content-between" role="button">Men’s Fashion <span>›</span></li>
+          <li role="button">Electronics</li>
+          <li role="button">Home & Lifestyle</li>
+          <li role="button">Medicine</li>
+          <li role="button">Sports & Outdoor</li>
+          <li role="button">Baby’s & Toys</li>
+          <li role="button">Groceries & Pets</li>
+          <li role="button">Health & Beauty</li>
+        </ul>
+      </div>
+
+      <!-- Banner -->
+      <div class="col-lg-9 ">
+        <div id="bannerSlider" class="carousel slide " data-bs-ride="carousel">
+
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="0" class="active  rounded-circle"
+              style="width:10px;height:10px; background-color: white;">
+            </button>
+
+            <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="1" class="rounded-circle"
+              style="width:10px;height:10px; background-color: white;">
+            </button>
+
+            <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="2" class="rounded-circle"
+              style="width:10px;height:10px; background-color: white;">
+            </button>
+          </div>
+
+
+
+          <div class="carousel-inner rounded overflow-hidden">
+
+            <div class="carousel-item active">
+              <div
+                class="bg-black text-white d-flex align-items-center justify-content-between p-5 flex-column flex-md-row">
+                <div>
+                  <h6 class="d-flex align-items-center gap-2">
+                    <img src="./Images Home Page/1200px-Apple_gray_logo 1.png">
+                    iPhone 14 Series
+                  </h6>
+                  <h1 class="fw-bold">Up to 10% <br> off Voucher</h1>
+                  <a href="#" class="text-white text-decoration-underline">Shop Now →</a>
+                </div>
+                <img src="./Images Home Page/hero_endframe__cvklg0xk3w6e_large 2.png" class="img-fluid mt-4 mt-md-0"
+                  style="max-height:300px;">
+              </div>
+            </div>
+
+
+            <div class="carousel-item active">
+              <div
+                class="bg-black text-white d-flex align-items-center justify-content-between p-5 flex-column flex-md-row">
+                <div>
+                  <h6 class="d-flex align-items-center gap-2">
+                    <img src="./Images Home Page/1200px-Apple_gray_logo 1.png">
+                    iPhone 14 Series
+                  </h6>
+                  <h1 class="fw-bold">Up to 10% <br> off Voucher</h1>
+                  <a href="#" class="text-white text-decoration-underline">Shop Now →</a>
+                </div>
+                <img src="./Images Home Page/hero_endframe__cvklg0xk3w6e_large 2.png" class="img-fluid mt-4 mt-md-0"
+                  style="max-height:300px;">
+              </div>
+            </div>
+
+
+            <div class="carousel-item active">
+              <div
+                class="bg-black text-white d-flex align-items-center justify-content-between p-5 flex-column flex-md-row">
+                <div>
+                  <h6 class="d-flex align-items-center gap-2">
+                    <img src="./Images Home Page/1200px-Apple_gray_logo 1.png">
+                    iPhone 14 Series
+                  </h6>
+                  <h1 class="fw-bold">Up to 10% <br> off Voucher</h1>
+                  <a href="#" class="text-white text-decoration-underline">Shop Now →</a>
+                </div>
+                <img src="./Images Home Page/hero_endframe__cvklg0xk3w6e_large 2.png" class="img-fluid mt-4 mt-md-0"
+                  style="max-height:300px;">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <section class="flash-sale-section container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+      <h3><span class="badge bg-danger">Today's</span> Flash Sales</h3>
+
+      <div>
+        <button class="arrow-btn me-2" onclick="slideLeft()">&#8592;</button>
+        <button class="arrow-btn" onclick="slideRight()">&#8594;</button>
+      </div>
+    </div>
+
+    <div class="slider-wrapper">
+      <div class="slider-track" id="sliderTrack">
+
+        <!-- Card 1 -->
+        <div class="product-card">
+          <!-- <span class="discount">-40%</span> -->
+          <img src="./Images Home Page/Frame 570.png" class="img-fluid">
+          <h6>HAVIT HV-G92 Gamepad</h6>
+          <p class="price">$120 <del>$160</del></p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="product-card">
+          <!-- <span class="discount">-35%</span> -->
+          <img src="./Images Home Page/Frame 570 (1).png">
+          <h6>AK-900 Keyboard</h6>
+          <p class="price">$960 <del>$1160</del></p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="product-card">
+          <!-- <span class="discount">-30%</span> -->
+          <img src="./Images Home Page/Frame 570 (2).png">
+          <h6>Gaming Monitor</h6>
+          <p class="price">$370 <del>$400</del></p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="product-card">
+          <!-- <span class="discount">-25%</span> -->
+          <img src="./Images Home Page/Frame 570 (3).png">
+          <h6>Comfort Chair</h6>
+          <p class="price">$375 <del>$400</del></p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="product-card">
+          <!-- <span class="discount">-20%</span> -->
+          <img src="./Images Home Page/Frame 570 (3).png">
+          <h6>Extra Product</h6>
+          <p class="price">$200 <del>$250</del></p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="product-card">
+          <!-- <span class="discount">-20%</span> -->
+          <img src="./Images Home Page/Frame 570 (3).png">
+          <h6>Extra Product</h6>
+          <p class="price">$200 <del>$250</del></p>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="product-card">
+          <!-- <span class="discount">-20%</span> -->
+          <img src="./Images Home Page/Frame 570 (3).png">
+          <h6>Extra Product</h6>
+          <p class="price">$200 <del>$250</del></p>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="product-card">
+          <!-- <span class="discount">-20%</span> -->
+          <img src="./Images Home Page/Frame 570 (3).png">
+          <h6>Extra Product</h6>
+          <p class="price">$200 <del>$250</del></p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container py-5">
+
+    <!-- Top Button -->
+    <div class="text-center mb-4">
+      <button class="btn btn-danger px-4">View All Products</button>
+    </div>
+
+    <hr>
+
+    <!-- Heading Row -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <div>
+        <div class="d-flex align-items-center gap-2 mb-2">
+          <span class="bg-danger rounded" style="width:14px;height:30px;"></span>
+          <small class="text-danger fw-semibold">Categories</small>
+        </div>
+        <h3 class="fw-bold">Browse By Category</h3>
+      </div>
+
+      <div class="d-flex gap-2">
+        <button class="btn btn-light rounded-circle">←</button>
+        <button class="btn btn-light rounded-circle">→</button>
+      </div>
+    </div>
+
+    <!-- Categories -->
+    <div class="row g-3 text-center">
+
+      <div class="col-6 col-md-4 col-lg-2" role="button">
+        <div class="border rounded py-4 h-100">
+          <img class="fs-2 mb-2" src="./Images Home Page/Category-CellPhone.png">
+          <!-- <div class="fs-2 mb-2">📱</div> -->
+          <p class="mb-0 small">Phones</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2" role="button">
+        <div class="border rounded py-4 h-100">
+          <img class="fs-2 mb-2" src="./Images Home Page/Category-Computer.png">
+          <!-- <div class="fs-2 mb-2">🖥️</div> -->
+          <p class="mb-0 small">Computers</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2" role="button">
+        <div class="border rounded py-4 h-100">
+          <img src="./Images Home Page/Category-SmartWatch.png">
+          <!-- <div class="fs-2 mb-2">⌚</div> -->
+          <p class="mb-0 small">SmartWatch</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2" role="button">
+        <div class="bg-danger text-white rounded py-4 h-100">
+          <img class="fs-2 mb-2" src="./Images Home Page/Category-Camera.png">
+          <!-- <div class="fs-2 mb-2">📷</div> -->
+          <p class="mb-0 small">Camera</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2" role="button">
+        <div class="border rounded py-4 h-100">
+          <img src="./Images Home Page/Category-Headphone.png">
+          <!-- <div class="fs-2 mb-2">🎧</div> -->
+          <p class="mb-0 small">HeadPhones</p>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-2" role="button">
+        <div class="border rounded py-4 h-100">
+          <img src="./Images Home Page/Category-Gamepad.png">
+          <!-- <div class="fs-2 mb-2">🎮</div> -->
+          <p class="mb-0 small">Gaming</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="container py-5">
+
+    <hr class="mb-4">
+
+    <!-- Heading -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <div>
+        <div class="d-flex align-items-center gap-2 mb-2">
+          <span class="bg-danger rounded" style="width:14px;height:30px;"></span>
+          <small class="text-danger fw-semibold">This Month</small>
+        </div>
+
+        <h3 class="fw-bold mb-0">Best Selling Products</h3>
+      </div>
+
+      <button class="btn btn-danger px-4">View All</button>
+    </div>
+
+    <!-- Products -->
+    <div class="row g-4">
+
+      <!-- Product 1 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="position-relative text-center p-3 bg-light rounded">
+            <!-- <span class="position-absolute top-0 end-0 m-2">♡</span> -->
+            <img src="./Images Home Page/Cart.png" class="img-fluid" style="width: auto;" alt="">
+          </div>
+          <div class="card-body">
+            <h6 class="fw-semibold mb-1">The north coat</h6>
+            <div class="mb-1">
+              <span class="text-danger fw-bold">$260</span>
+              <del class="text-muted ms-2">$360</del>
+            </div>
+            <div class="text-warning small">
+              ★★★★☆ <span class="text-muted">(65)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="position-relative text-center p-3 bg-light rounded">
+            <!-- <span class="position-absolute top-0 end-0 m-2">♡</span> -->
+            <img src="./Images Home Page/Cart (1).png" class="img-fluid" alt="">
+          </div>
+          <div class="card-body">
+            <h6 class="fw-semibold mb-1">Gucci duffle bag</h6>
+            <div class="mb-1">
+              <span class="text-danger fw-bold">$960</span>
+              <del class="text-muted ms-2">$1160</del>
+            </div>
+            <div class="text-warning small">
+              ★★★★☆ <span class="text-muted">(65)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="position-relative text-center p-3 bg-light rounded">
+            <!-- <span class="position-absolute top-0 end-0 m-2">♡</span> -->
+            <img src="./Images Home Page/Cart (2).png" class="img-fluid" alt="">
+          </div>
+          <div class="card-body">
+            <h6 class="fw-semibold mb-1">RGB liquid CPU Cooler</h6>
+            <div class="mb-1">
+              <span class="text-danger fw-bold">$160</span>
+              <del class="text-muted ms-2">$170</del>
+            </div>
+            <div class="text-warning small">
+              ★★★★☆ <span class="text-muted">(65)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="position-relative text-center p-3 bg-light rounded">
+            <!-- <span class="position-absolute top-0 end-0 m-2">♡</span> -->
+            <img src="./Images Home Page/Cart (3).png" class="img-fluid" alt="">
+          </div>
+          <div class="card-body">
+            <h6 class="fw-semibold mb-1">Small BookSelf</h6>
+            <div class="mb-1">
+              <span class="text-danger fw-bold">$360</span>
+            </div>
+            <div class="text-warning small">
+              ★★★★☆ <span class="text-muted">(65)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="container my-5">
+
+    <!-- ===== SECTION 1 : PROMO BANNER ===== -->
+    <div class="row align-items-center bg-black text-white rounded p-4 mb-5">
+
+      <!-- Left Content -->
+      <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+        <small class="text-success fw-semibold">Categories</small>
+        <h2 class="fw-bold mt-2">Enhance Your<br>Music Experience</h2>
+
+        <!-- Timer -->
+        <div class="d-flex justify-content-center justify-content-lg-start gap-2 my-3 flex-wrap">
+          <span class="badge bg-light text-dark p-3 rounded-circle">23<br><small>Hours</small></span>
+          <span class="badge bg-light text-dark p-3 rounded-circle">05<br><small>Days</small></span>
+          <span class="badge bg-light text-dark p-3 rounded-circle">59<br><small>Minutes</small></span>
+          <span class="badge bg-light text-dark p-3 rounded-circle">35<br><small>Seconds</small></span>
+        </div>
+
+        <button class="btn btn-success px-4">Buy Now!</button>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-lg-6 text-center">
+        <img src="./Images Home Page/Frame 694.png" class="img-fluid" alt="Speaker">
+      </div>
+
+    </div>
+
+    <!-- ===== SECTION 2 : EXPLORE PRODUCTS ===== -->
+
+    <!-- Heading -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <div>
+        <div class="d-flex align-items-center gap-2 mb-2">
+          <span class="bg-danger rounded" style="width:14px;height:30px;"></span>
+          <small class="text-danger fw-semibold">This Month</small>
+        </div>
+
+        <!-- <small class="text-danger fw-semibold">Our Products</small> -->
+        <h3 class="fw-bold mb-0">Explore Our Products</h3>
+      </div>
+      <div class="d-flex gap-2">
+        <button class="btn btn-light rounded-circle">←</button>
+        <button class="btn btn-light rounded-circle">→</button>
+      </div>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="row g-4">
+
+      <!-- Product -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="position-relative text-center p-3 bg-light">
+            <!-- <span class="position-absolute top-0 end-0 m-2">♡</span> -->
+            <img src="./Images Home Page/Cart (4).png" class="img-fluid" alt="">
+          </div>
+          <div class="card-body">
+            <h6 class="fw-semibold">Breed Dry Dog Food</h6>
+            <span class="text-danger fw-bold">$100</span>
+            <div class="text-warning small">★★★★☆ <span class="text-muted">(35)</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="position-relative text-center p-3 bg-light">
+            <!-- <span class="position-absolute top-0 end-0 m-2">♡</span> -->
+            <!-- <button class="btn btn-dark btn-sm position-absolute bottom-0 start-50 translate-middle-x mb-2">
+              Add To Cart
+            </button> -->
+            <img src="./Images Home Page/Cart (5).png" class="img-fluid" alt="">
+          </div>
+          <div class="card-body">
+            <h6 class="fw-semibold">CANON EOS DSLR Camera</h6>
+            <span class="text-danger fw-bold">$360</span>
+            <div class="text-warning small">★★★★☆ <span class="text-muted">(95)</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="position-relative text-center p-3 bg-light">
+            <!-- <span class="position-absolute top-0 end-0 m-2">♡</span> -->
+            <img src="./Images Home Page/Cart (6).png" class="img-fluid" alt="">
+          </div>
+          <div class="card-body">
+            <h6 class="fw-semibold">ASUS FHD Gaming Laptop</h6>
+            <span class="text-danger fw-bold">$700</span>
+            <div class="text-warning small">★★★★★ <span class="text-muted">(325)</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="position-relative text-center p-3 bg-light">
+            <!-- <span class="position-absolute top-0 end-0 m-2">♡</span> -->
+            <img src="./Images Home Page/Cart (11).png" class="img-fluid" alt="">
+          </div>
+          <div class="card-body">
+            <h6 class="fw-semibold">Curology Product Set</h6>
+            <span class="text-danger fw-bold">$500</span>
+            <div class="text-warning small">★★★★☆ <span class="text-muted">(145)</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="row g-4">
+
+      <!-- Product -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="position-relative text-center p-3 bg-light">
+            <!-- <span class="position-absolute top-0 end-0 m-2">♡</span> -->
+            <img src="./Images Home Page/Cart (7).png" class="img-fluid" alt="">
+          </div>
+          <div class="card-body">
+            <h6 class="fw-semibold">Breed Dry Dog Food</h6>
+            <span class="text-danger fw-bold">$100</span>
+            <div class="text-warning small">★★★★☆ <span class="text-muted">(35)</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="position-relative text-center p-3 bg-light">
+            <!-- <span class="position-absolute top-0 end-0 m-2">♡</span> -->
+            <!-- <button class="btn btn-dark btn-sm position-absolute bottom-0 start-50 translate-middle-x mb-2">
+              Add To Cart
+            </button> -->
+            <img src="./Images Home Page/Cart (8).png" class="img-fluid" alt="">
+          </div>
+          <div class="card-body">
+            <h6 class="fw-semibold">CANON EOS DSLR Camera</h6>
+            <span class="text-danger fw-bold">$360</span>
+            <div class="text-warning small">★★★★☆ <span class="text-muted">(95)</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="position-relative text-center p-3 bg-light">
+            <!-- <span class="position-absolute top-0 end-0 m-2">♡</span> -->
+            <img src="./Images Home Page/Cart (9).png" class="img-fluid" alt="">
+          </div>
+          <div class="card-body">
+            <h6 class="fw-semibold">ASUS FHD Gaming Laptop</h6>
+            <span class="text-danger fw-bold">$700</span>
+            <div class="text-warning small">★★★★★ <span class="text-muted">(325)</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-3">
+        <div class="card border-0 shadow-sm h-100">
+          <div class="position-relative text-center p-3 bg-light">
+            <!-- <span class="position-absolute top-0 end-0 m-2">♡</span> -->
+            <img src="./Images Home Page/Cart (10).png" class="img-fluid" alt="">
+          </div>
+          <div class="card-body">
+            <h6 class="fw-semibold">Curology Product Set</h6>
+            <span class="text-danger fw-bold">$500</span>
+            <div class="text-warning small">★★★★☆ <span class="text-muted">(145)</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- View All -->
+    <div class="text-center mt-5">
+      <button class="btn btn-danger px-5">View All Products</button>
+    </div>
+
+  </section>
+
+
+
+
+
+  <section class="container py-5">
+
+    <!-- Heading -->
+    <div class="mb-4">
+      <div class="d-flex align-items-center gap-2 mb-2">
+        <div class="d-flex align-items-center gap-2 mb-2">
+          <span class="bg-danger rounded" style="width:14px;height:30px;"></span>
+          <small class="text-danger fw-semibold">Featured</small>
+        </div>
+        <!-- <span class="bg-danger rounded" style="width:10px;height:24px;"></span>
+        <small class="text-danger fw-semibold">Featured</small> -->
+      </div>
+      <h3 class="fw-bold">New Arrival</h3>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="row g-4 ">
+
+      <!-- Large Left Card -->
+      <div class="col-lg-6">
+        <div class="position-relative bg-black">
+          <img src="./Images Home Page/ps5-slim-goedkope-playstation_large 1.png" class="img-fluid rounded  py-3" style="object-fit: cover; width: 100%; height: 100%;"
+            alt="PlayStation">
+
+          <!-- <img src="./Images Home Page/ps5-slim-goedkope-playstation_large 1.png" class="img-fluid rounded "
+            alt="PlayStation"> -->
+          <div class="position-absolute bottom-0 start-0 text-white p-4">
+            <h5 class="fw-bold">PlayStation 5</h5>
+            <p class="small mb-2">
+              Black and White version of the PS5 coming out on sale.
+            </p>
+            <a href="#" class="text-white fw-semibold text-decoration-none">
+              Shop Now →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Grid -->
+      <div class="col-lg-6">
+        <div class="row g-4">
+
+          <!-- Women Collection -->
+          <div class="col-12">
+            <div class="position-relative">
+              <img src="./Images Home Page/attractive-woman-wearing-hat-posing-black-background 1.png"
+                class="img-fluid rounded w-100 " style="max-height:280px; object-fit:cover;" alt="">
+
+              <!-- <img src="./Images Home Page/attractive-woman-wearing-hat-posing-black-background 1.png"
+                class="img-fluid rounded w-100" alt=""> -->
+              <div class="position-absolute bottom-0 start-0 text-white p-4">
+                <h5 class="fw-bold">Women’s Collections</h5>
+                <p class="small mb-2">Featured woman collections that give you another vibe.</p>
+                <a href="#" class="text-white fw-semibold text-decoration-none">
+                  Shop Now →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Speakers -->
+          <div class="col-md-6">
+            <div class="position-relative bg-black">
+              <img src="./Images Home Page/Frame 707.png" class="img-fluid rounded w-100 h-75" alt="">
+
+              <!-- <img src="./Images Home Page/Frame 707.png" class="img-fluid rounded w-100" alt=""> -->
+              <div class="position-absolute bottom-0 start-0 text-white p-3">
+                <h6 class="fw-bold mb-1">Speakers</h6>
+                <p class="small mb-1">Amazon wireless speakers</p>
+                <a href="#" class="text-white small fw-semibold text-decoration-none">
+                  Shop Now →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Perfume -->
+          <div class="col-md-6">
+            <div class="position-relative bg-black">
+              <img src="./Images Home Page/Frame 706.png" class="img-fluid rounded w-100 h-75" alt="">
+
+              <!-- <img src="./Images Home Page/Frame 706.png" class="img-fluid rounded w-100" alt=""> -->
+              <div class="position-absolute bottom-0 start-0 text-white p-3">
+                <h6 class="fw-bold mb-1">Perfume</h6>
+                <p class="small mb-1">GUCCI INTENSE OUD EDP</p>
+                <a href="#" class="text-white small fw-semibold text-decoration-none">
+                  Shop Now →
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Services -->
+    <div class="row text-center mt-5 g-4">
+
+      <div class="col-md-4">
+        <div class="mb-3 ">
+          <img class="border rounded-circle d-inline-flex align-items-center justify-content-center p-3 bg-black"
+            src="./Images Home Page/icon-delivery.png" alt="">
+          <!-- <span class="border rounded-circle d-inline-flex align-items-center justify-content-center p-3 bg-black">
+            🚚
+          </span> -->
+        </div>
+        <h6 class="fw-bold">FREE AND FAST DELIVERY</h6>
+        <p class="small text-muted">Free delivery for all orders over $140</p>
+      </div>
+
+      <div class="col-md-4">
+        <div class="mb-3">
+          <img class="border rounded-circle d-inline-flex align-items-center justify-content-center p-3 bg-black"
+            src="./Images Home Page/Icon-Customer service.png" alt="">
+          <!-- <span class="border rounded-circle d-inline-flex align-items-center justify-content-center p-3 bg-black">
+            🎧
+          </span> -->
+        </div>
+        <h6 class="fw-bold">24/7 CUSTOMER SERVICE</h6>
+        <p class="small text-muted">Friendly 24/7 customer support</p>
+      </div>
+
+      <div class="col-md-4">
+        <div class="mb-3">
+          <img class="border rounded-circle d-inline-flex align-items-center justify-content-center p-3 bg-black"
+            src="./Images Home Page/Icon-secure.png" alt="">
+          <!-- <span class="border rounded-circle d-inline-flex align-items-center justify-content-center p-3 bg-black">
+            ✔
+          </span> -->
+        </div>
+        <h6 class="fw-bold">MONEY BACK GUARANTEE</h6>
+        <p class="small text-muted">We return money within 30 days</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+  <footer class="bg-black text-light pt-5">
+
+    <div class="container">
+      <div class="row gy-4">
+
+        <!-- Exclusive -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Exclusive</h5>
+          <h6 class="fw-semibold">Subscribe</h6>
+          <p class="small text-secondary">Get 10% off your first order</p>
+
+          <div class="input-group">
+            <input type="email" class="form-control bg-black border-secondary text-light"
+              placeholder="Enter your email">
+            <button class="btn btn-outline-light">
+              <i class="bi bi-send"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Support -->
+        <div class="col-lg-3 col-md-6">
+          <h6 class="fw-semibold mb-3">Support</h6>
+          <p class="small text-secondary mb-1">111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.</p>
+          <p class="small text-secondary mb-1">exclusive@gmail.com</p>
+          <p class="small text-secondary">+88015-88888-9999</p>
+        </div>
+
+        <!-- Account -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h6 class="fw-semibold mb-3">Account</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">My Account</a></li>
+            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Login / Register</a></li>
+            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Cart</a></li>
+            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Wishlist</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Shop</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Link -->
+        <div class="col-lg-2 col-md-6 col-6">
+          <h6 class="fw-semibold mb-3">Quick Link</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Privacy Policy</a></li>
+            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Terms Of Use</a></li>
+            <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">FAQ</a></li>
+            <li><a href="#" class="text-secondary text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Download App -->
+        <div class="col-lg-2 col-md-6">
+          <h6 class="fw-semibold mb-3">Download App</h6>
+          <p class="small text-secondary">Save $3 with App New User Only</p>
+
+          <div class="d-flex gap-2 mb-3 ">
+            <img src="./Images Home Page/Qr Code.png" class="img-fluid w-50" alt="">
+            <div class="d-flex flex-column gap-2">
+              <img src="./Images Home Page/GooglePlay.png" class="img-fluid" alt="">
+              <img src="./Images Home Page/download-appstore.png" class="img-fluid" alt="">
+            </div>
+          </div>
+
+          <div class="d-flex gap-3 ">
+            <img  class="text-light" src="./Images Home Page/icon-instagram.png" alt="">
+            <img  class="text-light" src="./Images Home Page/Icon-Facebook.png" alt="">
+            <img  class="text-light" src="./Images Home Page/Icon-Linkedin.png" alt="">
+            <img  class="text-light" src="./Images Home Page/Icon-Twitter.png" alt="">
+            <!-- <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-linkedin"></i></a> -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom -->
+      <hr class="border-secondary mt-4">
+
+      <p class="text-center small text-secondary mb-0 pb-3">
+        © Copyright Rimel 2022. All right reserved
+      </p>
+
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    let position = 0;
+
+    function slideRight() {
+      position -= 270;
+      document.getElementById("sliderTrack").style.transform =
+        `translateX(${position}px)`;
+    }
+
+    function slideLeft() {
+      position += 270;
+      if (position > 0) position = 0;
+      document.getElementById("sliderTrack").style.transform =
+        `translateX(${position}px)`;
+    }
+  </script>
+
+
+</body>
+
+</html>
